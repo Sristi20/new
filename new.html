@@ -1,0 +1,30 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
+<script>  
+$(document).ready(function(){  
+  $("button").click(function(){  
+    $.ajax({url: "test.js", dataType: "script"});  
+  });  
+});  
+</script>  
+</head>  
+<body> 
+<form>
+    <div class="input-wrapper margin-top-5">
+        <label for="fullname">Full name</label>
+        <input type="text" name="fullname" id="fullname" maxlength="50">
+    </div>
+    <div class="input-wrapper margin-top-5">
+        <label for="mobile">Mobile number</label>
+        <input type="tel" name="mobile" id="mobile" placeholder="10-digit mobile number without prefixes">
+        <div  class="error-alert" id="mobile-error"></div>
+    </div>
+
+    <button> Click me </button>  
+</form> 
+<p id = "para"></p>  
+  
+</body>  
+</html>  
